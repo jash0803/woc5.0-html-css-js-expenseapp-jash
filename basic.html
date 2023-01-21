@@ -1,19 +1,18 @@
 <html>
-
-<style>
-table{background-color:#70f379;}
-th, td {border-style: outset;}
-</style>
-
 <head>
+
 <title>
 Expenses App
 </title>
+<script src="https://kit.fontawesome.com/d68b51344b.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
 </head>
 
 
-<body style="background-color:powderblue">
-<h1 style="text-align:center; background-color:#f3b683;">EXPENSES APP</h1>
+<body>
+
+
+<h1>EXPENSES APP</h1>
 
 
 <form>
@@ -27,13 +26,17 @@ Expenses App
 </tr>
 
 <tr>
-<td><input type="text" name="date1" value="01/01/2023"></td>
+<td id="date"><button type="button"
+onclick="document.getElementById('date').innerHTML = Date()">
+Click me</button></td>
 <td><input type="text" name="cat1" value="Food"></td>
 <td><input type="text" name="exp1" value="150"></td>
 </tr>
 
 <tr>
-<td><input type="text" name="date2" value="02/01/2023"></td>
+<td id="da"><button type="button"
+onclick="document.getElementById('da').innerHTML = Date()">
+Click me</button></td>
 <td><input type="text" name="cat2" value="Entertainment"></td>
 <td><input type="text" name="exp2" value="300"></td>
 </tr>
@@ -41,7 +44,6 @@ Expenses App
 </table>
 <input type="submit" value="Sumbit">
 </form>
-
 
 </body>
 </html>
