@@ -1,0 +1,44 @@
+<html>
+<head>
+
+<title>
+Expenses App
+</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+<h1>EXPENSES APP</h1>
+
+
+<form id="std">
+<table style="width:40%">
+<caption>January</caption>
+
+<tr>
+<th>Date</th>
+<th>Category</th>
+<th>Amount(in rupees)</th>
+</tr>
+
+<tr>
+<td id="date"><button type="button" onclick="document.getElementById('date').innerHTML = Date()">Date 1</button></td>
+<td><input type="text" name="cat1" value="Food"></td>
+<td><input type="text" name="exp1" value="150"></td>
+</tr>
+
+<tr>
+<td id="da"><button type="button" onclick="document.getElementById('da').innerHTML = Date()">Date 2</button></td>
+<td><input type="text" name="cat2" value="Entertainment"></td>
+<td><input type="text" name="exp2" value="300"></td>
+</tr>
+
+</table>
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
